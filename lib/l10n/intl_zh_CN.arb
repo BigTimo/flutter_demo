@@ -1,0 +1,4 @@
+{
+  "hello": "你好Flutter!",
+  "click_times": "你已按了这个按钮{d}次"
+}

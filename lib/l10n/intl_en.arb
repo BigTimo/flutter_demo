@@ -1,0 +1,4 @@
+{
+  "hello": "Hello Flutter!",
+  "click_times": "You have pushed the button this {d} times"
+}
