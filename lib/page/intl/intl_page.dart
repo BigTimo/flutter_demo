@@ -1,13 +1,9 @@
-import 'dart:collection';
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/main.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:flutter_demo/page/intl/assets_util.dart';
 
 import '../../generated/assets.dart';
 import '../../generated/l10n.dart';
-import 'package:intl/intl.dart';
 
 class IntlPage extends StatefulWidget {
   const IntlPage({super.key});
@@ -38,6 +34,10 @@ class _IntlPageState extends State<IntlPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              Assets.imgFlag.intl,
+              height: 100,
+            ),
             Text(S.current.hello),
             Text(S.of(context).click_times(_counter)),
             Column(

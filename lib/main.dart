@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/page/intl/assets_util.dart';
 import 'package:flutter_demo/page/intl/locale_change_notifier.dart';
 import 'package:flutter_demo/page/web_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -6,7 +7,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'generated/l10n.dart';
 import 'page/intl/intl_page.dart';
 
-void main() {
+List<String> assetPaths = [];
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  assetPaths = await AssetsUtil.getAssetsList();
   runApp(const MyApp());
 }
 

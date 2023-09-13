@@ -2,7 +2,9 @@
 class Assets {
   Assets._();
 
-  static const String htmlAb = 'assets/html/ab.js';
+  static const String htmlBridge = 'assets/html/bridge.js';
   static const String htmlH5 = 'assets/html/h5.html';
+  static const String imgFlag = 'assets/img/flag.png';
+  static const String imgZhCnFlag = 'assets/img_zh_cn/flag.png';
 
 }

@@ -92,5 +92,7 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/html/
+    - assets/img/
+    - assets/img_zh_cn/
 flutter_intl:
   enabled: true
