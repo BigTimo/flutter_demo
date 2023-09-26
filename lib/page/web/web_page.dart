@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
-import '../generated/assets.dart';
+import '../../generated/assets.dart';
 
 class WebPage extends StatefulWidget {
   const WebPage({super.key});

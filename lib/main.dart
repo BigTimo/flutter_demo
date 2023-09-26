@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/page/intl/assets_util.dart';
 import 'package:flutter_demo/page/intl/locale_change_notifier.dart';
-import 'package:flutter_demo/page/web_page.dart';
+import 'package:flutter_demo/page/small_window/small_window_page.dart';
+import 'package:flutter_demo/page/web/web_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'generated/l10n.dart';
@@ -109,6 +110,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
               child: Text("Intl"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SmallWindowPage()),
+                );
+              },
+              child: Text("SmallWindow"),
             ),
           ],
         ),
