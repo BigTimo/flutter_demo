@@ -9,13 +9,12 @@ extension GetExtension on GetInterface {
   ///路由历史
   List<Route<dynamic>> get history => routeHistoryObserver.history;
 
-  ///是否已打开该页面，从栈顶开始查找
+  ///是否已打开该页面
   bool containName(String name) {
-    var index = history.lastIndexWhere((element) => element.settings.name == name);
-    return index != -1;
+    return getRouteByName(name) != null;
   }
 
-  ///通过name获取route
+  ///通过name获取route，从栈顶开始查找
   Route? getRouteByName(String name) {
     var index = history.lastIndexWhere((element) => element.settings.name == name);
     if (index != -1) {
