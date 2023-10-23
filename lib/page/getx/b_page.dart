@@ -32,6 +32,12 @@ class BPage extends StatelessWidget {
               },
               child: const Text("Remove A"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.removeName(RouteConfig.b);
+              },
+              child: const Text("Remove B"),
+            ),
           ],
         ),
       ),

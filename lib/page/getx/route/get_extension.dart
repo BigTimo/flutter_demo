@@ -32,7 +32,12 @@ extension GetExtension on GetInterface {
   void removeName(String name) {
     var route = getRouteByName(name);
     if (route != null) {
-      Get.removeRoute(route);
+      if (history.last == route) {
+        //移除当前页面，直接返回
+        Get.back();
+      } else {
+        Get.removeRoute(route);
+      }
     }
   }
 
